@@ -7,7 +7,7 @@ from settings.message import MESSAGES
 class HandlerInlineQuery(Handler):
     """
     Класс обрабатывает входящие текстовые
-    сообщения от нажатия на инлайн-кнопоки
+    сообщения от нажатия на инлайн кнопоки
     """
 
     def __init__(self, bot):
@@ -15,9 +15,9 @@ class HandlerInlineQuery(Handler):
 
     def pressed_btn_product(self, call, code):
         """
-        Обрабатывает входящие запросы на нажатие inline-кнопок товара
+        обрабатывает входящие запросы на нажатие кнопок товара inline
         """
-        # создаем запись в БД по факту заказа
+        # создаеь запись в БД по факту заказа
         self.BD._add_orders(1, code, 1)
 
         self.bot.answer_callback_query(

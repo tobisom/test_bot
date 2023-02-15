@@ -1,4 +1,4 @@
-# импортируем класс HandlerCommands обработка команд
+# импортируем класс HandlerCommands обработка комманд
 from handlers.handler_com import HandlerCommands
 # импортируем класс HandlerAllText обработка нажатия на кнопки и иные сообщения
 from handlers.handler_all_text import HandlerAllText

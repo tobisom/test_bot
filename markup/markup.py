@@ -98,8 +98,8 @@ class Keyboards:
         выбранной категории товара и возвращает разметку
         """
         self.markup = InlineKeyboardMarkup(row_width=1)
-        # загружаем в название инлайн-кнопок данные
-        # из БД в соответствие с категорией товара
+        # загружаем в название инлайн кнопок данные
+        # с БД в соответствие с категорией товара
         for itm in self.BD.select_all_products_category(category):
             self.markup.add(self.set_inline_btn(itm))
 
